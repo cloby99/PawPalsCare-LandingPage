@@ -39,6 +39,18 @@
 
 }
 
+/* body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../src/assets/bg11.png);
+    opacity: 0.3; 
+    z-index: -1;
+} */
+
 html{
     scroll-behavior: smooth;
 }
@@ -62,16 +74,21 @@ body{
     margin: 0 auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5{
+
+
+h1{
+    font-size: 40px;
+    font-weight: 600px;
+}
+
+h2{
+    font-size: 25px;
     font-weight: 500;
 }
 
-h1{
-    font-size: 2.5rem;
+p{
+    font-size: 16px;
+    font-weight: 400;
 }
 
 section{

@@ -1,6 +1,5 @@
 header{
-    height: 5vh;
-    /* padding-top: 5rem; */
+    height:5vh;
     overflow: hidden;
     background-color: #F4C815;
 }
@@ -21,9 +20,9 @@ header{
 /* Media Queries (Medium Devices) */
 @media screen and (max-width: 1024px) {
 
-    header{
+    /* header{
         height: 60vh;
-    }
+    } */
 
    
     
@@ -33,43 +32,15 @@ header{
 /* Media Queries (Small Devices) */
 @media screen and (max-width: 600px) {
 
-    header{
+    /* header{
         height: 85vh;
     }
 
     .header__socials,
     .scroll__down{
         display: none;
-    }
+    } */
     
 }
 
-
-/* Media Queries (Small Devices) */
-@media screen and (max-width: 380px) {
-
-    header{
-        height: 118vh;
-    }
-
-    .header__socials,
-    .scroll__down{
-        display: none;
-    }
-    
-}
-
-/* Media Queries (Small Devices) */
-@media screen and (max-width: 370px) {
-
-    header{
-        height: 100vh;
-    }
-
-    .header__socials,
-    .scroll__down{
-        display: none;
-    }
-    
-}
 
