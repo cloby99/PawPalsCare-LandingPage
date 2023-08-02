@@ -1,0 +1,75 @@
+header{
+    height: 5vh;
+    /* padding-top: 5rem; */
+    overflow: hidden;
+    background-color: #F4C815;
+}
+
+
+
+/* SCROLL DOWN */
+.scroll__down{
+    position: absolute;
+    right: 2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
+/* Media Queries (Medium Devices) */
+@media screen and (max-width: 1024px) {
+
+    header{
+        height: 60vh;
+    }
+
+   
+    
+}
+
+
+/* Media Queries (Small Devices) */
+@media screen and (max-width: 600px) {
+
+    header{
+        height: 85vh;
+    }
+
+    .header__socials,
+    .scroll__down{
+        display: none;
+    }
+    
+}
+
+
+/* Media Queries (Small Devices) */
+@media screen and (max-width: 380px) {
+
+    header{
+        height: 118vh;
+    }
+
+    .header__socials,
+    .scroll__down{
+        display: none;
+    }
+    
+}
+
+/* Media Queries (Small Devices) */
+@media screen and (max-width: 370px) {
+
+    header{
+        height: 100vh;
+    }
+
+    .header__socials,
+    .scroll__down{
+        display: none;
+    }
+    
+}
+

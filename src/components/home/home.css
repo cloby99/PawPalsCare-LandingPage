@@ -1,0 +1,150 @@
+.home{
+    height: 95vh;
+    padding-top: 2rem;
+    overflow: hidden;
+    background-color: var(--color-blue);
+}
+
+
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.home__container{
+    padding: 0 5rem;
+}
+
+.home__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 12rem;
+}
+
+.home__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__body > h1 {
+    font-weight: 600;
+    color: var(--color-dark-rosy);
+    align-content: center;
+}
+
+
+/* CTA */
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+
+/* HEADER SOCIALS */
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__socials::after{
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+
+
+/* IMAGE */
+.me{
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 15rem;
+    height: 23rem;
+    position: absolute;
+    left: calc(50% - 7.3rem);
+    margin-top: 4rem;
+    border-radius: 7rem 7rem 0 0;
+    overflow: hidden;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+}
+
+
+/* SCROLL DOWN */
+.scroll__down{
+    position: absolute;
+    right: 2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
+/* Media Queries (Medium Devices) */
+@media screen and (max-width: 1024px) {
+
+    header{
+        height: 60vh;
+    }
+
+   
+    
+}
+
+
+/* Media Queries (Small Devices) */
+@media screen and (max-width: 600px) {
+
+    header{
+        height: 85vh;
+    }
+
+    .header__socials,
+    .scroll__down{
+        display: none;
+    }
+    
+}
+
+
+/* Media Queries (Small Devices) */
+@media screen and (max-width: 380px) {
+
+    header{
+        height: 118vh;
+    }
+
+    .header__socials,
+    .scroll__down{
+        display: none;
+    }
+    
+}
+
+/* Media Queries (Small Devices) */
+@media screen and (max-width: 370px) {
+
+    header{
+        height: 100vh;
+    }
+
+    .header__socials,
+    .scroll__down{
+        display: none;
+    }
+    
+}
+
