@@ -11,13 +11,7 @@
 }
 
 :root{
-    --color-bg: #1A223E;
-    --color-bg-variant: #444655dc;
-    --color-primary: hwb(358 76% 11%);
-    --color-primary-variant: #A8AABC;
-    --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.66);
-
+    
     --color-gold: #F4C815;
     --color-pink: #F9CAD7;
     --color-rosy: #A57283;
@@ -39,17 +33,7 @@
 
 }
 
-/* body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../src/assets/bg11.png);
-    opacity: 0.3; 
-    z-index: -1;
-} */
+
 
 html{
     scroll-behavior: smooth;
@@ -61,16 +45,15 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: var(--color-bg);
-    color: var(--color-white);
-    line-height: 1.7;
-    background-image: url(../src/assets/bg-texture.png);
+    background: var(--color-black-smoke);
+    color: var(--color-white-smooke);
+    
 }
 
 
 /* General Styles */
 .container{
-    width: var(--container-width-lg);
+    /* width: var(--container-width-lg); */
     margin: 0;
     padding: 2rem 8rem;
 }
@@ -98,28 +81,17 @@ section{
     /* padding-top: 3rem; */
 }
 
-section > h2, 
-section > h5{
-    text-align: center;
-    color: var(--color-light);
-}
 
-section > h2{
-    color: var(--color-primary);
-    margin-bottom: 3rem;
-}
 
-.text-light{
-    color: var(--color-light);
-}
+
 
 a{
-    color: var(--color-primary);
+    
     transition: var(--transition);
 }
 
 a:hover{
-    color: var(--color-white);
+    color: var(--color-white-smooke);
 }
 
 .btn{
