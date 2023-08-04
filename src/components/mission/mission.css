@@ -1,0 +1,133 @@
+.mission {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-pink);
+    gap: 1rem;
+}
+
+.mission__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.mission__header > hr {
+    width: 15rem;
+    height: 0.1rem;
+    background-color: var(--color-dark-rosy);
+}
+
+.mission__header > h1 {
+    color: var(--color-dark-rosy);
+}
+
+.mission__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 1rem 5rem;
+    margin: 0 6rem;
+    border-radius: 20px;
+}
+
+.mission__container-top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.mission__container-top h2,
+.mission__container-top p {
+    color: var(--color-black-smoke);
+}
+
+.mission__container-bottom {
+    padding: 1.5rem 5rem ;
+}
+
+.card__img img {
+    width: 3rem;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: var(--color-rosy); /* Inactive bullet color */
+    
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet::before {
+    background: var(--color-pink); /* Inactive bullet color */
+    
+}
+
+.swiper-button-prev,
+.sswiper-button-next {
+  color: var(--color-rosy) !important; /* Replace with your desired color */
+  font-size: 1rem  !important;
+}
+
+/* Arrow icon color */
+.swiper-button-prev::before,
+.swiper-button-next::after {
+    color: var(--color-rosy) !important; /* Replace with your desired color */
+}
+
+
+.mission__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-white-smooke);
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 2rem 0;
+    transition: transform 0.2s ease-in-out;
+    position: relative; /* Add this line to create a stacking context */
+    border: 2px var(--color-rosy) solid;
+}
+
+.mission__card::before {
+    content: ""; /* Add this line to ensure pseudo-element has content */
+    background-image: url(../../assets/bg11.png);
+    opacity: 0.2; /* Set the opacity value between 0 and 1 (0.5 is 50% opacity) */
+    z-index: -1; /* Ensure the pseudo-element is behind the card content */
+    position: absolute; /* Add this line to position the pseudo-element */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+}
+
+.card__img {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    
+}
+
+.card__img img {
+    width: 100%;
+    max-width: 15rem;
+    height: 10rem;
+    border-radius: 20px;
+}
+
+.card__img img:hover {
+    transform: scale(1.2);
+    padding-bottom: 1rem;
+}
+
+.card__description {
+    flex-grow: 1;
+    color: var(--color-white);
+    padding: 0 2rem;
+    /* margin: 2rem 0; */
+    background-color: var(--color-rosy);
+}
