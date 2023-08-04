@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './contact.css';
 import { MdOutlineEmail } from 'react-icons/md';
 import { RiMessengerLine } from 'react-icons/ri';
-import { BsWhatsapp } from 'react-icons/bs';
+import { BsInstagram} from 'react-icons/bs';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 
@@ -14,7 +14,7 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_4wvnhlt', 'template_11za4xr', form.current, '3_swA1GktPNzMKvjU')
+      .sendForm('service_gq7ref9', 'template_11ko8r9', form.current, '9J__uGQCFsaix0uFp')
       .then(
         (result) => {
           console.log(result.text);
@@ -32,48 +32,57 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact">
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
+    <section id="contact" className='container contact'>
+      <div className='contact__header'>
+        <hr />
+        <h1>Contact Us</h1>
+        <hr />
+      </div>
 
-      <div className="container contact__container">
+      <div className="contact__container">
         <div className="contact__options">
-          <article className="contact__option">
-            <MdOutlineEmail className="contact__option-icon" />
-            <h4>Email</h4>
-            <h5>anudelay99@gmail.com</h5>
-            <a href="mailto:anudelay99@gmail.com" target="_blank" rel="noopener noreferrer">
-              Send a message
-            </a>
-          </article>
+          <a href="mailto:pawpal.care@gmail.com" target="_blank" rel="noopener noreferrer">
+            <article className="contact__option">
+              <div className='__contactMethod'>
+                <MdOutlineEmail className="contact__option-icon" />
+                <h4>Email</h4>
+              </div>
+              {/* <h5>anudelay99@gmail.com</h5>
+              <a href="mailto:anudelay99@gmail.com" target="_blank" rel="noopener noreferrer">
+                Send a message
+              </a> */}
+            </article>
+          </a>
+          <a href="">
+            <article className="contact__option">
+              <div className="__contactMethod">
+                <RiMessengerLine className="contact__option-icon" />
+                <h4>Messenger</h4>
+              </div>
+              
+            </article>
+          </a>
 
-          <article className="contact__option">
-            <RiMessengerLine className="contact__option-icon" />
-            <h4>Messenger</h4>
-            <h5>Anuradha Basnayake</h5>
-            <a href="https://m.me/anuradha.basnayake.5895" target="_blank" rel="noopener noreferrer">
-              Send a message
-            </a>
-          </article>
-
-          <article className="contact__option">
-            <BsWhatsapp className="contact__option-icon" />
-            <h4>WhatsApp</h4>
-            <h5>+94 774678176</h5>
-            <a href="https://api.whatsapp.com/send?phone=+94774678176" target="_blank" rel="noopener noreferrer">
-              Send a message
-            </a>
-          </article>
+          <a href="">
+            <article className="contact__option">
+              <div className="__contactMethod">
+                <BsInstagram className="contact__option-icon" />
+                <h4>Instagram</h4>
+              </div>
+              
+            </article>
+          </a>
         </div>
 
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail} className='form__details'>
+          <p>Send your message</p>
           <input type="text" name="name" placeholder="Your Full Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn__contact">
             Send Message
           </button>
-          {isEmailSent && <div className="flash-message success">Your message sent successfully!</div>}
+          {isEmailSent && <div className="flash-message success" style={{ color: 'var(--color-dark-rosy)', fontFamily: 'Poppins', fontWeight: 'bold' }}>Your message sent successfully!</div>}
 
         </form>
 

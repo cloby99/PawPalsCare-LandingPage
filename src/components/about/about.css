@@ -93,8 +93,7 @@
 }
 
 .about__cardFilled:hover{
-    border: 5px solid var(--color-dark-green);
-
+    background-color: var(--color-green);
 }
 
 .about__card p,

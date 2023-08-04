@@ -24,7 +24,7 @@ function container() {
               </div>
             </div>
             
-            <button>Get Started </button>
+            <button className='btn btn-primary'>Get Started </button>
             
         </div>
     </div>
