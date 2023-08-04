@@ -93,7 +93,7 @@
 .mission__card::before {
     content: ""; /* Add this line to ensure pseudo-element has content */
     background-image: url(../../assets/bg11.png);
-    opacity: 0.2; /* Set the opacity value between 0 and 1 (0.5 is 50% opacity) */
+    opacity: 0.5; /* Set the opacity value between 0 and 1 (0.5 is 50% opacity) */
     z-index: -1; /* Ensure the pseudo-element is behind the card content */
     position: absolute; /* Add this line to position the pseudo-element */
     top: 0;
