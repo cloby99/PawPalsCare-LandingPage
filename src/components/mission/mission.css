@@ -2,7 +2,9 @@
     display: flex;
     flex-direction: column;
     background-color: var(--color-pink);
-    gap: 1rem;
+    gap: 2rem;
+    justify-content: flex-start;
+    /* align-items: center; */
 }
 
 .mission__header {
@@ -14,7 +16,7 @@
 }
 
 .mission__header > hr {
-    width: 15rem;
+    width: 20%;
     height: 0.1rem;
     background-color: var(--color-dark-rosy);
 }
@@ -45,7 +47,7 @@
 }
 
 .mission__container-bottom {
-    padding: 1.5rem 5rem ;
+    padding: 1.5rem 12rem ;
 }
 
 .card__img img {
@@ -88,6 +90,8 @@
     transition: transform 0.2s ease-in-out;
     position: relative; /* Add this line to create a stacking context */
     border: 2px var(--color-rosy) solid;
+    
+    
 }
 
 .mission__card::before {
@@ -125,9 +129,103 @@
 }
 
 .card__description {
+    display: flex;
     flex-grow: 1;
     color: var(--color-white);
     padding: 0 2rem;
     /* margin: 2rem 0; */
     background-color: var(--color-rosy);
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* Media Queries (Medium Devices) */
+@media screen and (max-width: 1024px) {
+
+    .mission{
+        gap: 1rem;
+    }
+    .mission__container {
+        
+        padding: 1rem 1rem;
+        margin: 0 0rem;
+        
+    }
+
+    .mission__container-top > h2 {
+        align-self: center;
+    }
+
+    .mission__container-bottom{
+        padding: 1.5rem 3rem;
+    }
+    
+}
+
+
+  
+  /* Media Queries (Small Devices) */
+@media screen and (max-width: 600px) {
+    .mission__header > hr {
+        display: none;
+    }
+
+    .mission__container {
+        
+        padding: 1rem 0rem;
+        margin: 0rem 0rem;
+        gap: 0.2rem;
+        
+    }
+
+    .mission__container-top{
+        gap: 1.5rem;
+        padding: 0 1.5rem;
+    }
+
+    .mission__container-top > h2 {
+        align-self: center;
+        text-align: center;
+    }
+
+    .mission__container-top > p {
+        /* align-self: center; */
+        text-align: justify;
+    }
+
+    .mission__container-bottom{
+        padding: 1.5rem 0rem;
+    }
+
+    .swiper-button-prev,
+    .sswiper-button-next {
+        color: var(--color-rosy) !important; /* Replace with your desired color */
+        font-size: 2px  !important;
+    }
+
+    .card__img img {
+        width: 100%;
+        max-width: 10rem;
+        height: 8rem;
+        border-radius: 20px;
+    }
+
+    .mission__card {
+        padding-top: 0.5rem;
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+        /* gap: 5rem; */
+
+    }
+
+    .card__description {
+        height: 4rem;
+        
+    }
+
+    
 }

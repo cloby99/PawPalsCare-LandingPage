@@ -16,7 +16,7 @@
 }
 
 .contact__header > hr {
-  width: 15rem;
+  width: 20%;
   height: 0.1rem;
   background-color: var(--color-dark-rosy);
 }
@@ -138,20 +138,100 @@
 }
 
   
-  /* Media Queries (Medium Devices) */
-  @media screen and (max-width: 1024px) {
-    .container.contact__container {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
+/* Media Queries (Medium Devices) */
+@media screen and (max-width: 1024px) {
+
+  .contact{
+    gap: 2rem;
+  }
+  .contact__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin: 0.5rem 3rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .contact__options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__option {
+    padding: 1rem 0;
+    width: 12rem;
+    
   }
   
-  /* Media Queries (Small Devices) */
-  @media screen and (max-width: 600px) {
-    .container.contact__container {
-      width: var(--container-width-sm);
-    }
+  form{
+    width: 100%;
   }
+
+  
+}
+
+
+/* Media Queries (Small Devices) */
+@media screen and (max-width: 600px) {
+
+  .contact{
+      gap: 2rem;
+  }
+
+  .contact__container{
+    
+    gap: 2rem;
+    margin: 0.5rem 0rem;
+    
+  }
+
+  .contact__header > hr {
+    display: none;
+  }
+
+  .contact__options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__option {
+    padding: 0.8rem;
+    width: 12rem;
+    
+  }
+
+  form {    
+    gap: 1rem;   
+    padding: 1.5rem 1rem;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.3rem;
+    color: var(--color-black-smoke);
+    background: var(--color-blue);
+    /* border: 2px solid var(--color-primary-variant); */
+    resize: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins';
+  }
+
+  textarea {
+    height: 8rem;
+  }
+
+  .__contactMethod > h4 {
+    font-size: 14px;
+  } 
+  
+}
 
   
   

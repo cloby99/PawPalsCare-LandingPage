@@ -1,7 +1,9 @@
 header{
-    height:5vh;
+    position: sticky;
+    padding: 1.5rem;
     overflow: hidden;
     background-color: #F4C815;
+    
 }
 
 

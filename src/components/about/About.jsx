@@ -22,7 +22,6 @@ const About = () => {
         
           <div className="about__cards">
             <article className="about__card">
-              
               <p>We are a team of animal lovers who want to make a difference in the lives of stray animals. </p>
             </article>
 

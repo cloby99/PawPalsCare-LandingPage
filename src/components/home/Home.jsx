@@ -6,7 +6,7 @@ import LOGO from '../../assets/LOGO.svg'
 
 function Home() {
   return (
-    <div className='home'>
+    <div className='container home'>
       <div className='home__container'>
         <div className="home__header">
           <img src={LOGO} alt="" className='logo'/>
